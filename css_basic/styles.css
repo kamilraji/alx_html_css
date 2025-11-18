@@ -23,3 +23,27 @@
 .tweet-text { margin: 0; color: #333; line-height: 1.4; }
 
 .site-footer { color: #777; font-size: .9rem; padding: .75rem 0; border-top: 1px solid #eee; margin-top: 2rem; }
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto; /* Takes remaining space between header and footer */
+}
+
+
+main > article {
+  flex: 2;
+  overflow-y: auto; /* Allows scrolling inside article if content is long */
+}
+
+main > aside {
+  flex: 1;
+  overflow-y: auto;
+}
