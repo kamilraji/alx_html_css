@@ -47,3 +47,31 @@ main > aside {
   flex: 1;
   overflow-y: auto;
 }
+.logo {
+  font-size: 2rem;
+  margin-size: 1rem;
+  color: #c22;
+}
+
+header a {
+  background: #333;
+  color: #fff;
+}
+
+header a {
+  color: #fff;
+}
+
+main {
+  bacground: #f8f8f8;
+}
+
+article {
+  padding: 1rem;
+  background: #fff;
+}
+
+aside {
+  padding; 1rem;
+  background: #f0f0f0;
+}
