@@ -1,0 +1,25 @@
+.intro h2 { margin-top: 0; color: #333; font-size: 1.1rem; }
+
+.url-form { display:flex; gap:0.5rem; align-items:center; }
+.url-form input[type="text"]{
+  flex: 1;
+  padding: .6rem .75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.url-form button{
+  padding: .55rem .9rem;
+  border: none;
+  border-radius: 4px;
+  background: #c22;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tweet-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.tweet { padding: .75rem; border-radius: 4px; background: #fff; border: 1px solid #f0f0f0; }
+.tweet-author { margin: 0 0 .25rem 0; color: #b33; font-size: .95rem; }
+.tweet-text { margin: 0; color: #333; line-height: 1.4; }
+
+.site-footer { color: #777; font-size: .9rem; padding: .75rem 0; border-top: 1px solid #eee; margin-top: 2rem; }
