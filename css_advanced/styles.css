@@ -81,3 +81,86 @@ body {
   color: #555;
   border-top: 1px solid #ddd;
 }
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  padding: 40px 60px;
+  color: white;
+
+  background: url("images/banner.png"); /* Replace with your correct image */
+  background-size: cover;
+  background-position: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6); /* Dark overlay */
+}
+
+.hero {
+  position: relative; /* Makes content appear on top of overlay */
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a {
+  color: #ffffffcc;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+
+.hero-content {
+  margin-top: 100px; /* Move text down */
+  max-width: 500px;
+}
+
+.hero-content h1 {
+  font-size: 70px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  color: #ffffff99;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  background: #c271ff;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
