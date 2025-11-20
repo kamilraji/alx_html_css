@@ -164,3 +164,13 @@ body {
   font-weight: 600;
 }
 
+hero {
+  position: relative;
+  min-height: 100vh;
+  padding: 40px 60px;
+  color: white;
+
+  background: url("images/Object.png");
+  background-size: cover;
+  background-position: center;
+}
