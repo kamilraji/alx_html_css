@@ -420,3 +420,80 @@ body {
     max-width: 100%;
   }
 }
+
+.membership-section {
+  background-color: #0a0a14;
+  padding: 80px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.membership-title {
+  font-size: 28px;
+  margin-bottom: 60px;
+}
+
+.membership-title span {
+  color: #C271FF;
+  font-weight: 700;
+}
+
+.membership-grid {
+  max-width: 1000px;
+  margin: 0 auto 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.membership-item {
+  text-align: center;
+}
+
+.membership-icon {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.membership-item h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.membership-item p {
+  font-size: 14px;
+  color: #cccccc;
+  line-height: 1.4;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+/* Register Button */
+.membership-btn {
+  background-color: #C271FF;
+  color: #fff;
+  padding: 14px 36px;
+  border-radius: 28px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: opacity 0.3s;
+}
+
+.membership-btn:hover {
+  opacity: 0.85;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .membership-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .membership-grid {
+    grid-template-columns: 1fr;
+  }
+}
