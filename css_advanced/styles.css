@@ -207,3 +207,63 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
+.quotes-section {
+  background-color: #000;
+  padding: 32px 0;
+}
+
+.quotes-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 64px 80px;
+  background-color: #C271FF;
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.quotes-avatar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.quotes-content {
+  max-width: 550px;
+}
+
+.quotes-text {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0 0 24px;
+}
+
+.quotes-name {
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0 0 4px;
+}
+
+.quotes-role {
+  font-size: 14px;
+  font-style: italic;
+  opacity: 0.7;
+  margin: 0;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .quotes-inner {
+    flex-direction: column;
+    text-align: center;
+    padding: 48px 24px;
+  }
+
+  .quotes-content {
+    max-width: 100%;
+  }
+}
