@@ -1,1 +1,86 @@
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #ffffff;
+  color: #071629;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* OUR RESULTS SECTION */
+.results {
+  background: #071629;
+  color: #ffffff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.results h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.results-text {
+  max-width: 600px;
+  margin: 0 auto 50px;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+/* CIRCLE STATS */
+.circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.circle span {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.result-box p {
+  opacity: 0.9;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  .results-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .circle {
+    width: 110px;
+    height: 110px;
+  }
+
+  .circle span {
+    font-size: 20px;
+  }
+}
