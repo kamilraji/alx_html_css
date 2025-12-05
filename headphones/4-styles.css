@@ -1,1 +1,65 @@
+/* ===== FOOTER STYLING ===== */
+.footer {
+    background: #0a0a0a url("../images/headphones_hero_2.jpg") center/cover no-repeat;
+    padding: 80px 20px;
+    color: white;
+}
 
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.footer-content p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.results {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.result-item {
+    background: #e0003c;
+    padding: 20px 10px;
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.result-item .percent {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.result-item p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* ===== MOBILE RESPONSIVENESS ===== */
+@media (max-width: 600px) {
+    .results {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .result-item {
+        margin-bottom: 20px;
+    }
+}
