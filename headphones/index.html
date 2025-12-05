@@ -1,1 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Headphones</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Optional: Google Font to match Figma (Source Sans Pro) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Hero / Header -->
+    <header class="hero">
+      <div class="container">
+        <nav class="nav">
+          <a href="#" class="logo">Headphones</a>
+
+          <!-- Mobile menu toggle -->
+          <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+          <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+          </label>
+
+          <ul class="nav-links">
+            <li><a href="#what-we-do">What we do</a></li>
+            <li><a href="#results">Our results</a></li>
+            <li><a href="#contact">Contact us</a></li>
+          </ul>
+        </nav>
+
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Lorem ipsum dolor sit amet headphones</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+              ultricies odio euismod, tempor dui vel, vulputate nibh. Sed
+              aliquam lorem sit amet sapien dignissim, nec commodo lorem
+              dapibus.
+            </p>
+            <a href="#what-we-do" class="btn primary-btn">CALL TO ACTION</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- WHAT WE DO -->
+      <section id="what-we-do" class="section">
+        <div class="container">
+          <h2 class="section-title">What we do…</h2>
+          <p class="section-intro">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+            volutpat, lectus sit amet viverra feugiat, arcu sem interdum nisi,
+            sed sagittis arcu lectus quis elit.
+          </p>
+
+          <div class="features">
+            <article class="feature">
+              <div class="feature-icon">🎧</div>
+              <h3>High-quality sound</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                molestie, lorem at ultricies dapibus.
+              </p>
+            </article>
+
+            <article class="feature">
+              <div class="feature-icon">🔋</div>
+              <h3>Long battery life</h3>
+              <p>
+                Integer id urna nec elit convallis tincidunt. Nulla facilisi.
+                Vestibulum ac odio sit amet turpis.
+              </p>
+            </article>
+
+            <article class="feature">
+              <div class="feature-icon">📶</div>
+              <h3>Wireless freedom</h3>
+              <p>
+                Maecenas porttitor tortor in arcu varius, a condimentum lorem
+                condimentum. Suspendisse potenti.
+              </p>
+            </article>
+
+            <article class="feature">
+              <div class="feature-icon">🎵</div>
+              <h3>Crystal-clear audio</h3>
+              <p>
+                Proin hendrerit fermentum eros, vel luctus dui mattis vitae.
+                Integer eget lorem arcu.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- OUR RESULTS -->
+      <section id="results" class="section section-dark">
+        <div class="container">
+          <h2 class="section-title section-title-light">Our results</h2>
+          <p class="section-intro section-intro-light">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            luctus felis sed urna rhoncus, et hendrerit augue consectetur.
+          </p>
+
+          <div class="results-grid">
+            <div class="result-item">
+              <div class="result-circle">
+                <span>+2K</span>
+              </div>
+              <p>Happy customers</p>
+            </div>
+
+            <div class="result-item">
+              <div class="result-circle">
+                <span>98%</span>
+              </div>
+              <p>Positive reviews</p>
+            </div>
+
+            <div class="result-item">
+              <div class="result-circle">
+                <span>24/7</span>
+              </div>
+              <p>Support</p>
+            </div>
+
+            <div class="result-item">
+              <div class="result-circle">
+                <span>4.9</span>
+              </div>
+              <p>Average rating</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <div class="container">
+          <h2 class="section-title">Contact us</h2>
+
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input
+                id="subject"
+                type="text"
+                name="subject"
+                placeholder="How can we help you?"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Write your message here"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn primary-btn">
+              SEND MESSAGE
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-top">
+          <div class="footer-logo">Headphones</div>
+          <div class="footer-social">
+            <!-- Simple placeholder social links -->
+            <a href="#">Fb</a>
+            <a href="#">Tw</a>
+            <a href="#">Ig</a>
+          </div>
+        </div>
+        <p class="footer-copy">
+          © 2025 Headphones. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
