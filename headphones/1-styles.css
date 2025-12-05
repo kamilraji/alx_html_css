@@ -1,1 +1,177 @@
+/* =========
+   RESET
+   ========= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* =========
+   VARIABLES
+   ========= */
+:root {
+  --primary-color: #ff6565;
+  --dark-color: #071629;
+  --text-light: #ffffff;
+  --max-width: 1000px;
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* =========
+   GLOBAL
+   ========= */
+body {
+  font-family: var(--font-family);
+  color: var(--text-light);
+}
+
+/* =========
+   HERO / HEADER
+   ========= */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  color: var(--text-light);
+  background-image: url("images/headphones_hero_1.jpg");
+  /* change path/name if your image is different */
+  background-size: cover;
+  background-position: center;
+}
+
+/* dark gradient overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(7, 22, 41, 0.85),
+    rgba(7, 22, 41, 0.95)
+  );
+}
+
+.hero-content {
+  position: relative;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 30px 20px 60px;
+}
+
+/* =========
+   NAVIGATION
+   ========= */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 140px;
+}
+
+.logo {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  text-transform: lowercase;
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+/* link hover/active requirement */
+.nav-links a:hover,
+.nav-links a:active {
+  color: var(--primary-color);
+}
+
+/* =========
+   HERO MAIN CONTENT
+   ========= */
+.hero-main {
+  max-width: 550px;
+}
+
+.hero-main h1 {
+  font-size: 32px;
+  margin: 0 0 15px;
+}
+
+.hero-main p {
+  margin: 0 0 20px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* CTA button */
+.btn {
+  display: inline-block;
+  padding: 12px 36px;
+  margin-bottom: 30px;
+  border-radius: 24px;
+  border: none;
+  text-transform: uppercase;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+/* button hover/active requirement */
+.btn:hover,
+.btn:active {
+  opacity: 0.9;
+}
+
+/* small paragraph under button */
+.hero-subtext {
+  max-width: 450px;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+/* =========
+   MOBILE (≤ 480px)
+   ========= */
+@media (max-width: 480px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 80px;
+  }
+
+  .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-main {
+    text-align: center;
+    max-width: none;
+  }
+
+  .hero-main h1 {
+    font-size: 24px;
+  }
+
+  .hero-subtext {
+    max-width: none;
+  }
+}
