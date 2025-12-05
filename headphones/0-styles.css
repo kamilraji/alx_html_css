@@ -1,1 +1,170 @@
+/* --- RESET / BASE --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #ffffff;
+}
+
+/* --- HERO --- */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("images/headphones_hero.jpg"); /* <-- change to your file */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* dark overlay on the image */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;          /* requirement: max width 1000px */
+  margin: 0 auto;
+  padding: 20px 15px 80px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* --- NAVBAR --- */
+
+.hero-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.hero-logo {
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* menu list */
+.hero-menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/* link hover / active color */
+.hero-menu a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.hero-menu a:hover,
+.hero-menu a:active {
+  color: #ff6565;             /* requirement */
+}
+
+/* --- MOBILE MENU TOGGLE (hamburger) --- */
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-toggle-label {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-toggle-label span,
+.menu-toggle-label span::before,
+.menu-toggle-label span::after {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #ffffff;
+  position: relative;
+}
+
+.menu-toggle-label span::before,
+.menu-toggle-label span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.menu-toggle-label span::before {
+  top: -6px;
+}
+
+.menu-toggle-label span::after {
+  top: 6px;
+}
+
+/* --- HERO TEXT --- */
+
+.hero-content {
+  margin: auto;              /* vertically centers the card area */
+  text-align: center;
+  max-width: 550px;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+/* centered card effect */
+.hero-content {
+  background: rgba(7, 22, 41, 0.85);
+  padding: 40px 30px 45px;
+  border-radius: 4px;
+}
+
+/* --- BUTTON --- */
+
+.btn {
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.hero-btn {
+  background-color: #ff6565;
+  color: #ffffff;
+}
+
+.hero-btn:hover,
+.hero-btn:active {
+  opacity: 0.9;              /* requirement */
+}
+
+/
